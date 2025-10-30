@@ -46,8 +46,10 @@ export const Hero = () => {
               alt="SVIT Logo" 
               className="h-16 md:h-24 object-contain"
             />
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white text-center">
-              Sai Vidya Institute of Technology
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-center">
+              <span className="bg-gradient-to-r from-white via-white to-secondary/90 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]">
+                Sai Vidya Institute of Technology
+              </span>
             </h2>
             <img 
               src={naacLogo} 
