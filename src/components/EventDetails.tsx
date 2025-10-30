@@ -26,7 +26,7 @@ const timeline = [
   {
     icon: Trophy,
     title: "Final Submission",
-    date: "November 4th, 2024",
+    date: "November 4th, 2025",
     description: "Submit your projects before the deadline.",
     color: "text-destructive",
   },
