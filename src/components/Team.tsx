@@ -24,6 +24,7 @@ const eventManagers = [
 const studentCoordinators = [
   {
     name: "Alisha Pandit",
+    phone: "7989204532",
     email: "alishapandit.24is@saividya.ac.in",
   },
   {

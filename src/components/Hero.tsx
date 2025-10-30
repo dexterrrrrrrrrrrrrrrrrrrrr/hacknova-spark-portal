@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import svitLogo from "@/assets/svit-logo.jpg";
+import svitLogo from "@/assets/svit-logo.png";
 import naacLogo from "@/assets/naac-logo.png";
 
 export const Hero = () => {
@@ -8,8 +8,11 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-secondary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -20,8 +23,10 @@ export const Hero = () => {
             alt="SVIT Logo" 
             className="h-20 md:h-28 object-contain"
           />
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white text-center flex-1 mx-8">
-            HACKNOVA
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-center flex-1 mx-8 relative">
+            <span className="bg-gradient-to-r from-white via-secondary to-accent bg-clip-text text-transparent animate-glow drop-shadow-[0_0_30px_rgba(0,200,255,0.5)]">
+              HACKNOVA
+            </span>
           </h1>
           <img 
             src={naacLogo} 
@@ -36,7 +41,7 @@ export const Hero = () => {
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Sai Vidya Institute of Technology
               <br />
-              <span className="text-secondary">Hackathon 2024</span>
+              <span className="text-secondary">Hackathon 2025</span>
             </h2>
             <p className="text-xl md:text-3xl text-white/90 font-medium">
               Innovate, Create, and Compete
