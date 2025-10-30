@@ -5,6 +5,7 @@ const organizers = [
   {
     role: "Faculty Coordinator",
     name: "Dr. Amogh P K",
+    email: "amogh.pk@saividya.ac.in",
   },
 ];
 
@@ -52,8 +53,15 @@ export const Team = () => {
           <div className="animate-scale-in">
             <h3 className="text-2xl font-bold text-center mb-6 text-primary">Faculty Coordinator</h3>
             <Card className="max-w-md mx-auto border-2 hover:border-primary/20 hover:shadow-md transition-all">
-              <CardContent className="pt-6 text-center">
+              <CardContent className="pt-6 text-center space-y-3">
                 <h4 className="text-xl font-bold text-foreground">{organizers[0].name}</h4>
+                <a 
+                  href={`mailto:${organizers[0].email}`}
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors justify-center"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span className="text-sm">{organizers[0].email}</span>
+                </a>
               </CardContent>
             </Card>
           </div>
