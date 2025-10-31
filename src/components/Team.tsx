@@ -4,13 +4,8 @@ import { Mail, Phone } from "lucide-react";
 const organizers = [
   {
     role: "Faculty Coordinator",
-    name: "Dr. Amogh P K",
-    email: "amogh.pk@saividya.ac.in",
-  },
-  {
-    role: "Faculty Coordinator",
-    name: "Dr. Prasanna Lakshmi G S",
-    email: "prasannalakshmi.gs@saividya.ac.in",
+    name: "Dr. Amogh P K & Dr. Prasanna Lakshmi G S",
+    email: "amogh.pk@saividya.ac.in & prasannalakshmi.gs@saividya.ac.in",
   },
 ];
 
