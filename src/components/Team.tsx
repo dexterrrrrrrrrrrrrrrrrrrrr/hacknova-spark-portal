@@ -7,6 +7,10 @@ const organizers = [
     name: "Dr. Amogh P K",
     email: "amogh.pk@saividya.ac.in",
   },
+  {
+    role: "Faculty Coordinator",
+    name: "Dr. Prasanna Lakshmi G S",
+    email: "prasannalakshmi.gs@saividya.ac.in",
 ];
 
 const eventManagers = [
