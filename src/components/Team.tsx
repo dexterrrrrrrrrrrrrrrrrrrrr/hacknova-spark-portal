@@ -28,11 +28,6 @@ const studentCoordinators = [
     phone: "7989204532",
     email: "alishapandit.24is@saividya.ac.in",
   },
-  {
-    name: "Akilesh Amarnath",
-    phone: "7760542728",
-    email: "akilesha.24is@saividya.ac.in",
-  },
 ];
 
 export const Team = () => {

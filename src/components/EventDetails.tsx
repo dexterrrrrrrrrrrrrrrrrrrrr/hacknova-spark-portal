@@ -5,14 +5,14 @@ const timeline = [
   {
     icon: Users,
     title: "Registration Opens",
-    date: "Today",
+    date: "October 31st, 2025",
     description: "Registration is now live on Unstop. Secure your spot now!",
     color: "text-secondary",
   },
   {
     icon: Lightbulb,
     title: "Problem Statements Revealed",
-    date: "Today",
+    date: "October 31st, 2025",
     description: "All challenge themes and requirements will be announced.",
     color: "text-primary",
   },
