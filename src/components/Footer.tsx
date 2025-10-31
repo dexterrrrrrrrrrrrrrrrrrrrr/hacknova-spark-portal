@@ -45,7 +45,7 @@ export const Footer = () => {
                 <span>SVIT Official Website</span>
               </a>
               <a 
-                href="https://unstop.com" 
+                href="https://unstop.com/o/4K72Ykg?lb=5Hk6I3GK&utm_medium=Share&utm_source=WhatsApp" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-secondary transition-colors group"

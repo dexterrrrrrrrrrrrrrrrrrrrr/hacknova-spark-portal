@@ -88,7 +88,7 @@ export const Hero = () => {
               className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 rounded-xl shadow-glow hover:shadow-lg transition-all duration-300 hover:scale-105"
               asChild
             >
-              <a href="https://unstop.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://unstop.com/o/4K72Ykg?lb=5Hk6I3GK&utm_medium=Share&utm_source=WhatsApp" target="_blank" rel="noopener noreferrer">
                 Register on Unstop <ArrowRight className="ml-2" />
               </a>
             </Button>
