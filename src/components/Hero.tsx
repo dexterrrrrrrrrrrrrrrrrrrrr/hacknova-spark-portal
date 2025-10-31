@@ -5,36 +5,36 @@ import naacLogo from "@/assets/naac-logo.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Animated background elements with robotics theme */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Animated orbs */}
-        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        {/* Dark animated orbs */}
+        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-zinc-800/30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-zinc-700/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-zinc-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
         
         {/* Circuit board pattern */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-20">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <circle cx="25" cy="25" r="2" fill="currentColor" className="text-secondary"/>
-                <circle cx="75" cy="75" r="2" fill="currentColor" className="text-accent"/>
-                <path d="M25 25 L75 25 L75 75" stroke="currentColor" strokeWidth="0.5" fill="none" className="text-secondary/50"/>
-                <path d="M25 75 L50 75 L50 25" stroke="currentColor" strokeWidth="0.5" fill="none" className="text-accent/50"/>
+                <circle cx="25" cy="25" r="2" fill="currentColor" className="text-zinc-400"/>
+                <circle cx="75" cy="75" r="2" fill="currentColor" className="text-zinc-500"/>
+                <path d="M25 25 L75 25 L75 75" stroke="currentColor" strokeWidth="0.5" fill="none" className="text-zinc-400/50"/>
+                <path d="M25 75 L50 75 L50 25" stroke="currentColor" strokeWidth="0.5" fill="none" className="text-zinc-500/50"/>
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#circuit)"/>
           </svg>
         </div>
         
-        {/* Floating geometric shapes */}
-        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-secondary/30 rotate-45 animate-[spin_20s_linear_infinite]" />
-        <div className="absolute bottom-32 right-20 w-16 h-16 border-2 border-accent/30 animate-[spin_15s_linear_infinite_reverse]" />
-        <div className="absolute top-1/3 right-1/4 w-12 h-12 border-2 border-secondary/20 rounded-full animate-pulse" />
+        {/* Floating geometric shapes - robotic theme */}
+        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-zinc-400/30 rotate-45 animate-[spin_20s_linear_infinite]" />
+        <div className="absolute bottom-32 right-20 w-16 h-16 border-2 border-zinc-500/30 animate-[spin_15s_linear_infinite_reverse]" />
+        <div className="absolute top-1/3 right-1/4 w-12 h-12 border-2 border-zinc-400/20 rounded-full animate-pulse" />
         
         {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -59,9 +59,12 @@ export const Hero = () => {
           </div>
           
           {/* HACKNOVA Title */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-center relative">
-            <span className="bg-gradient-to-r from-white via-secondary to-accent bg-clip-text text-transparent animate-glow drop-shadow-[0_0_30px_rgba(0,200,255,0.5)]">
-              HACKNOVA
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-black text-center relative font-orbitron tracking-widest">
+            <span className="relative inline-block">
+              <span className="absolute inset-0 blur-2xl bg-gradient-to-r from-zinc-300 via-white to-zinc-300 opacity-50"></span>
+              <span className="relative text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] [text-shadow:0_0_40px_rgba(255,255,255,0.5),0_0_80px_rgba(255,255,255,0.3)]">
+                HACKNOVA
+              </span>
             </span>
           </h1>
         </div>
