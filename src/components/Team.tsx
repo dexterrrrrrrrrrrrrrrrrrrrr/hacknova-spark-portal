@@ -94,33 +94,29 @@ export const Team = () => {
           {/* Student Coordinators */}
           <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-2xl font-bold text-center mb-6 text-primary">Student Coordinators</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {studentCoordinators.map((coordinator, index) => (
-                <Card key={index} className="border-2 hover:border-accent/20 hover:shadow-md transition-all">
-                  <CardContent className="pt-6 space-y-3">
-                    <h4 className="text-xl font-bold text-foreground text-center">{coordinator.name}</h4>
-                    <div className="space-y-2">
-                      {coordinator.phone && (
-                        <a 
-                          href={`tel:${coordinator.phone}`}
-                          className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors justify-center"
-                        >
-                          <Phone className="w-4 h-4" />
-                          <span>{coordinator.phone}</span>
-                        </a>
-                      )}
-                      <a 
-                        href={`mailto:${coordinator.email}`}
-                        className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors justify-center break-all"
-                      >
-                        <Mail className="w-4 h-4 flex-shrink-0" />
-                        <span className="text-sm">{coordinator.email}</span>
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <Card className="max-w-md mx-auto border-2 hover:border-accent/20 hover:shadow-md transition-all">
+              <CardContent className="pt-6 space-y-3">
+                <h4 className="text-xl font-bold text-foreground text-center">{studentCoordinators[0].name}</h4>
+                <div className="space-y-2">
+                  {studentCoordinators[0].phone && (
+                    <a 
+                      href={`tel:${studentCoordinators[0].phone}`}
+                      className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors justify-center"
+                    >
+                      <Phone className="w-4 h-4" />
+                      <span>{studentCoordinators[0].phone}</span>
+                    </a>
+                  )}
+                  <a 
+                    href={`mailto:${studentCoordinators[0].email}`}
+                    className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors justify-center break-all"
+                  >
+                    <Mail className="w-4 h-4 flex-shrink-0" />
+                    <span className="text-sm">{studentCoordinators[0].email}</span>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

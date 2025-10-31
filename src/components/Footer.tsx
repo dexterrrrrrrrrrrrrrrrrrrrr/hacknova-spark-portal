@@ -45,7 +45,7 @@ export const Footer = () => {
                 <span>SVIT Official Website</span>
               </a>
               <a 
-                href="https://unstop.com/o/4K72Ykg?lb=5Hk6I3GK&utm_medium=Share&utm_source=WhatsApp" 
+                href="https://unstop.com/hackathons/hacknova-sai-vidya-institute-of-technology-1582249"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-secondary transition-colors group"
